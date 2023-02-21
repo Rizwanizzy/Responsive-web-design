@@ -1,9 +1,16 @@
 /* Media Query 1170px */
 @media(max-width:1199.5px){
     /* paralex */
-
+    .parallax:not(parallax-main){
+        background-size: 165%;
+    }
+    .main-wrapper .black-card{
+        width: 100%;
+    }
     /* process */
-
+    .process-wrapper .process-content{
+        width: 100%;
+    }
     /* contact page */
     
 }
@@ -12,44 +19,90 @@
 /* Media Query 991px */
 @media(max-width:991.5px){
 
-/* 01 Navbar CSS */
-.header .navbar-collapse{
-    padding:2rem;
+    /* 01 Navbar CSS */
+    .header .navbar-collapse{
+        padding:2rem;
 
-}
-.header .navbar-nav .nav-link{
-    padding: 0.6rem 0.5rem;
-    margin-bottom: 2rem;
+    }
+    .header .navbar-nav .nav-link{
+        padding: 0.6rem 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /* banner */
+    .banner-wrapper{
+        margin-top: 4rem;
+        padding :4rem 2rem;
+        min-height: 730px;
+    }
+
+    /* card */
+    .main-wrapper .black-card{
+        left: -226px;
+    }
+    .main-wrapper .black-card.right{
+        right: -226px;
+    }
+
+    /* Parallax CSS */
+    .parallax-main{
+        background-size: cover;
+    }
 }
 
 
-/* banner */
-.banner-wrapper{
-    margin-top: 4rem;
-    padding :4rem 2rem;
-    min-height: 730px;
-}
-}
 
 /* Media Query 767px */
 @media(max-width:767.5px){
 
-/* General CSS */
-body,html{
-    font-size: 8px;
+    /* General CSS */
+    body,html{
+        font-size: 8px;
+    }
+
+    /* banner */
+    .banner-wrapper{
+        min-height: 550px;
+    }
+    /* Card  */
+    .main-wrapper .black-card{
+        left: 5%;
+        width: 90%;
+    }
+    .main-wrapper .black-card.right{
+        right: 5%;
+        width: 90%;
+    }
+
+    /* Parallax CSS */
+    .parallax:not(.parallax-main){
+        background-size: cover;
+    }
+    .parallax-1{
+        background-size: cover;
+    }
 }
 
-/* banner */
-.banner-wrapper{
-    min-height: 550px;
-}
-}
+
 
 /* Media Query 590px */
 @media(max-width590px){
     /* General CSS */
     body,html{
         font-size: 7px;
+    }
+    /* Parallax  */
+    .parallax.img2,.parallax.img3,.parallax.img4,.parallax.img5{
+        height: 408px;
+    }
+    .main-wrapper{
+        margin-top: 35vh;
+    }
+    /* footer  */
+    .link-widget a img{
+        width: 30px;
+        height: 30px;
     }
 }
 
